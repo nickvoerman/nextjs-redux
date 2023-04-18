@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+//font family
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+//font sizes
+h1 {
+  @apply font-body font-bold text-4xl leading-tight;
+
+  @screen md {
+    @apply text-5xl leading-tight;
+  }
+}
+
+h2 {
+  @apply font-body font-bold text-2xl leading-tight;
+
+  @screen md {
+    @apply text-3xl leading-tight;
+  }
+}
+
+h3 {
+  @apply font-body font-bold text-lg leading-tight;
+
+  @screen md {
+    @apply text-xl leading-tight;
+  }
+}
+
+h4 {
+  @apply font-body font-bold text-base leading-tight;
+
+  @screen md {
+    @apply text-lg leading-tight;
+  }
+}
+
+p {
+  @apply font-body;
+}
+
+input,
+textarea,
+button {
+  @apply font-body;
+}
+
+//helpers
+.break-word {
+  word-break: break-word;
+}
